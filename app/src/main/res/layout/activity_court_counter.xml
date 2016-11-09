@@ -21,26 +21,37 @@
               android:text="0"
               android:textSize="32sp"
               android:textAlignment="center"
+              android:id="@+id/score"
     />
 
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Shot +3"
+            android:onClick="addThree"
+            android:layout_margin="4dp"
             android:id="@+id/button"/>
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Shot +2"
-            android:id="@+id/button2" android:layout_gravity="center_vertical"/>
+            android:onClick="addTwo"
+            android:layout_margin="4dp"
+            android:id="@+id/button2"
+            android:layout_gravity="center_vertical"/>
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Free Shot"
+            android:onClick="FreeThrow"
+            android:layout_margin="4dp"
             android:id="@+id/button3"/>
     <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="4dp"
             android:text="Reset"
-            android:id="@+id/button3"/>
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button3"
+    />
 </LinearLayout>
